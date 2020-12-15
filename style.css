@@ -1,0 +1,122 @@
+body {
+    background: #7faeff;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    background: #efeec3;
+    margin: 40px; 
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    width: 75%; 
+    margin: 0 auto;
+    background: #e4f9f6;
+}
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+p {
+    font-weight: bold;
+    background: #efeec3;
+    margin: 20px 0 0 0;
+}
+
+.codexample {
+    background: #0000FF; 
+}
+
+.codexampl {
+    font-size: 130%;
+    color: #fff;
+    white-space: pre-wrap; 
+    display: flex;
+    flex-direction: column; 
+}
+
+code {
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+    background: #efeec3;
+    padding-left: 105px;
+}
+
+li:nth-child(2) {
+    background: url(https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico) no-repeat;
+    margin-top: 20px;
+}
+
+li:nth-child(3) {
+    background: url(pone1.png) no-repeat;
+}
+
+li:nth-child(4) {
+    background: url(https://github.com/fluidicon.png) no-repeat;
+}
+
+li:nth-child(2), li:nth-child(3), li:nth-child(4) {
+    background-size: 25px 25px;
+    padding-left: 40px;
+}
+
+figure img {
+    width: 250px;
+}
+
+@media screen and (max-width: 1010px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    li:nth-child(1) {
+        font-size: medium;
+    }
+    ul {
+        width: 45%;
+    }
+    figure {
+        width: 45%;
+    }
+    pre {
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    section{
+        flex-direction: column-reverse;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    li:nth-child(1) {
+        font-size: medium;
+    }
+    ul, figure {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
